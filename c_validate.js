@@ -12,7 +12,7 @@ class c_validate {
 		assert( Array.isArray( censored ), "censored must be an array" );
 		assert( Array.isArray( required ), "required must be an array" );
 		assert( classname.length != 0, 	   "class name cant be empty" );
-        assert( min_length >= 0,           "min length must be > 0" );
+        	assert( min_length >= 0,           "min length must be > 0" );
 		
 		this.m_classname  = classname;
 		this.m_min_length = min_length;
@@ -81,7 +81,7 @@ c_validate.prototype.check_object = function( e ) {
 
 c_validate.prototype.validate = function( ) {
 	var objects = document.querySelectorAll( this.m_classname );
-	var ret 	= true;
+	var ret     = true;
 	
 	for( var i = 0; i < objects.length; ++i ) {
 		var it = objects[ i ];
