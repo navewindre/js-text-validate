@@ -1,0 +1,10 @@
+<textarea class="asdf" name="test"></textarea>
+<input type="password" class="validate_pwd" name="pwd"/>
+
+<script src="assert.js"></script>
+<script src="c_validate.js"></script>
+<script src="validate.js"></script>
+<script>
+validate_impl_field( ".validate_pwd", 4, [ ],  [ /\d+/g, /[A-Z]/, /[a-z]/ ] );
+validate_impl_email( ".asdf"		, 3, [ ] );
+</script>
